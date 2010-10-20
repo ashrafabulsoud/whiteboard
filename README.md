@@ -2,6 +2,7 @@ Whiteboard
 ==========
 
 used:
+
 * HTML5 canvas (2d)
 * jQuery
 * Ajax
