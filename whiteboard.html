@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title>Ajax Whiteboard Prototype 1</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.periodicalupdater.js"></script>
+  <script type="text/javascript" src="whiteboard.js"></script> 
+ </head>
+ <body>
+  <div>
+  Ajax Whiteboard Prototype 1
+   <input type="button" value="#" title="#" id="drawcolor">
+   <input type="button" value="clear board" title="clear board" onclick="Commands.clear();">
+   <input type="button" value="000000" title="000000" onclick="setDrawColor('000000');" style="color:#ffffff;background-color:#000000">
+   <input type="button" value="ff0000" title="ff0000" onclick="setDrawColor('ff0000');" style="background-color:#ff0000">
+   <input type="button" value="00ff00" title="00ff00" onclick="setDrawColor('00ff00');" style="background-color:#00ff00">
+   <input type="button" value="0000ff" title="0000ff" onclick="setDrawColor('0000ff');" style="background-color:#0000ff">
+   <input type="text" value="000000" title="set color" size="6" maxlength="6" onkeydown="setDrawColor(this.value);">
+  </div>
+  <canvas id="canvas" style="border:2px dashed black;">Your browser does not support the html5 canvas element.</canvas>
+<!--
+  <div id="color">
+  </div>
+  <div id="tools">
+  </div>
+  TODO: TOOLS, MORE COLORS
+-->
+  <div id="debug"></div>
+  <div id="debug2"></div>
+  <div id="debug3"></div>
+ </body>
+</html>
