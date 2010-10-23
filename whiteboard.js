@@ -118,7 +118,9 @@ Canvas={
 	this.context.stroke();
     },
     clear:function(){
-	this.context.clearRect(0,0,this.canvas.width,this.canvas.height);
+	// paper background - white
+	this.context.fillStyle='#ffffff';
+	this.context.fillRect(0,0,this.canvas.width,this.canvas.height);
     }
 };
 ////////////////////////////////////////////////////////////////////////////////////////////////
